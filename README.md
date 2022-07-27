@@ -23,4 +23,6 @@ openssl pkcs12 -export -in my-cert.pem -inkey my-key.pem -out test-cert.pfx
 ```
 git config --global gpg.x509.program smimesign
 git config --global gpg.format x509
+smimesign --list-keys
+git config --local user.signingkey 0ff455a2708394633e4bb2f88002e3cd80cbd76f
 ```
